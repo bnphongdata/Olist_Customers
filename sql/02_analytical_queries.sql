@@ -2,7 +2,7 @@
 -- DỰ ÁN PHÂN TÍCH DỮ LIỆU KHÁCH HÀNG OLIST (BRAZIL)
 -- Tệp: 02_analytical_queries.sql
 -- Mục đích: Tập hợp các câu lệnh SQL phân tích chuyên sâu cho bài toán kinh doanh
--- Tác giả: Chuyên viên Phân tích Dữ liệu (Lead Data Analyst)
+-- Tác giả: Bùi Nhất Phong (Data Analyst)
 -- ==============================================================================
 
 -- ==============================================================================

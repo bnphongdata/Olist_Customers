@@ -1,6 +1,6 @@
 # ĐẰNG SAU 100.000 ĐƠN HÀNG: OLIST ĐANG BÁN HÀNG CHO AI VÀ VÌ SAO KHÁCH KHÔNG QUAY LẠI?
 
-> **Người viết**: Phong Bùi (Lead Data Analyst)  
+> **Người viết**: Bùi Nhất Phong (Data Analyst)  
 > **Dữ liệu phân tích**: Gần 100.000 giao dịch khách hàng Olist (Thương mại điện tử Brazil)  
 > **Góc nhìn**: Câu chuyện thực tế từ số liệu – Không màu mè, đi thẳng vào bản chất kinh doanh  
 

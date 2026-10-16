@@ -1,6 +1,6 @@
 # DỰ ÁN PHÂN TÍCH DỮ LIỆU KHÁCH HÀNG OLIST (BRAZIL E-COMMERCE)
 
-> **Tác giả**: Phong Bùi (Lead Data Analyst)  
+> **Tác giả**: Bùi Nhất Phong (Data Analyst)  
 > **Kho lưu trữ GitHub**: [https://github.com/bnphongdata/Olist_Customers.git](https://github.com/bnphongdata/Olist_Customers.git)  
 > **Công nghệ thực chiến**: Python 3.14 (Pandas, SQLite3), SQL Analytics, Power BI Desktop (DAX & Star Schema Modeling)  
 

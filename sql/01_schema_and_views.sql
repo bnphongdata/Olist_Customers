@@ -2,7 +2,7 @@
 -- DỰ ÁN PHÂN TÍCH DỮ LIỆU KHÁCH HÀNG OLIST (BRAZIL)
 -- Tệp: 01_schema_and_views.sql
 -- Mục đích: Định nghĩa cấu trúc Schema, Ràng buộc Khóa & Các View phân tích
--- Tác giả: Chuyên viên Phân tích Dữ liệu (Lead Data Analyst)
+-- Tác giả: Bùi Nhất Phong (Data Analyst)
 -- ==============================================================================
 
 -- 1. BẢNG CHIỀU ĐỊA LÝ (DIMENSION GEOGRAPHY)

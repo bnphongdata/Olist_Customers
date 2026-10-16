@@ -2,7 +2,7 @@
 ================================================================================
 DỰ ÁN PHÂN TÍCH DỮ LIỆU KHÁCH HÀNG OLIST (BRAZIL E-COMMERCE)
 Kịch bản 01: Làm sạch dữ liệu, bổ sung thông tin địa lý & dựng mô hình Star Schema
-Tác giả: Phong Bùi (Lead Data Analyst)
+Tác giả: Bùi Nhất Phong (Data Analyst)
 Ngôn ngữ: Python 3.14 (Pandas, SQLite3)
 ================================================================================
 """

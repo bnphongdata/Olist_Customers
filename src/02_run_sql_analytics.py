@@ -2,7 +2,7 @@
 ================================================================================
 DỰ ÁN PHÂN TÍCH DỮ LIỆU KHÁCH HÀNG OLIST (BRAZIL E-COMMERCE)
 Kịch bản 02: Thực thi SQL Analytics & Bóc tách sự thật từ các con số
-Tác giả: Phong Bùi (Lead Data Analyst)
+Tác giả: Bùi Nhất Phong (Data Analyst)
 Ngôn ngữ: Python 3.14 (SQLite3, Tabulate, Pandas)
 ================================================================================
 """
