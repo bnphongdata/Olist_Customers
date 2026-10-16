@@ -2,7 +2,7 @@
 
 > **Người thực hiện**: Phong Bùi (Lead Data Analyst)  
 > **Mục tiêu**: Giúp bạn hiểu rõ bản chất từng con số và cách bố trí Dashboard sao cho "biết nói", nhìn vào là thấy ngay vấn đề kinh doanh chứ không chỉ là những biểu đồ vô hồn.  
-> **Trạng thái**: Đã nạp dữ liệu và kết nối sẵn vào Power BI Desktop của bạn qua Power BI MCP.  
+> **Trạng thái**: Đã nạp dữ liệu, thiết lập quan hệ và sẵn sàng trong mô hình Power BI Desktop.  
 
 ---
 
