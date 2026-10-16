@@ -1,132 +1,33 @@
 {
-  "config": "{\"version\": \"5.55\", \"themeCollection\": {\"baseTheme\": {\"name\": \"CY24SU10\", \"version\": \"5.55\", \"type\": 2}}, \"activeSectionIndex\": 0, \"defaultDrillFilterOtherVisuals\": true, \"settings\": {\"useNewFilterPaneExperience\": true}}",
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.55\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true}}",
   "layoutOptimization": 0,
   "sections": [
     {
-      "name": "Section_Overview",
-      "displayName": "01. Tổng Quan & Bài Toán Giữ Chân",
+      "name": "ReportSection1",
+      "displayName": "01. Tổng Quan & Giữ Chân",
       "filters": "[]",
       "ordinal": 0,
       "width": 1280,
       "height": 720,
-      "visualContainers": [
-        {
-          "x": 20,
-          "y": 15,
-          "z": 0,
-          "width": 1240,
-          "height": 60,
-          "config": "{\"name\": \"HeaderTitle\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"OLIST BRAZIL E-COMMERCE: HI\\u1ec6U SU\\u1ea4T KH\\u00c1CH H\\u00c0NG & B\\u00c0I TO\\u00c1N RETENTION\", \"textStyle\": {\"fontFamily\": \"Segoe UI Semibold\", \"fontSize\": \"18pt\", \"color\": \"#0f172a\"}}]}]}}]}}}"
-        },
-        {
-          "x": 20,
-          "y": 90,
-          "z": 1,
-          "width": 280,
-          "height": 120,
-          "config": "{\"name\": \"Card_TotalOrders\", \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_ChiSo_KPI.T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"_ChiSo_KPI\", \"Entity\": \"_ChiSo_KPI\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"_ChiSo_KPI\"}}, \"Property\": \"T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}, \"Name\": \"_ChiSo_KPI.T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}]}}}"
-        },
-        {
-          "x": 320,
-          "y": 90,
-          "z": 2,
-          "width": 280,
-          "height": 120,
-          "config": "{\"name\": \"Card_TotalCustomers\", \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_ChiSo_KPI.T\\u1ed5ng kh\\u00e1ch h\\u00e0ng Unique\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"_ChiSo_KPI\", \"Entity\": \"_ChiSo_KPI\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"_ChiSo_KPI\"}}, \"Property\": \"T\\u1ed5ng kh\\u00e1ch h\\u00e0ng Unique\"}, \"Name\": \"_ChiSo_KPI.T\\u1ed5ng kh\\u00e1ch h\\u00e0ng Unique\"}]}}}"
-        },
-        {
-          "x": 620,
-          "y": 90,
-          "z": 3,
-          "width": 280,
-          "height": 120,
-          "config": "{\"name\": \"Card_RepeatRate\", \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_ChiSo_KPI.T\\u1ef7 l\\u1ec7 mua l\\u1ea1i (%)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"_ChiSo_KPI\", \"Entity\": \"_ChiSo_KPI\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"_ChiSo_KPI\"}}, \"Property\": \"T\\u1ef7 l\\u1ec7 mua l\\u1ea1i (%)\"}, \"Name\": \"_ChiSo_KPI.T\\u1ef7 l\\u1ec7 mua l\\u1ea1i (%)\"}]}}}"
-        },
-        {
-          "x": 920,
-          "y": 90,
-          "z": 4,
-          "width": 340,
-          "height": 120,
-          "config": "{\"name\": \"Card_Frequency\", \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_ChiSo_KPI.T\\u1ea7n su\\u1ea5t mua TB (\\u0110\\u01a1n/Kh\\u00e1ch)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"_ChiSo_KPI\", \"Entity\": \"_ChiSo_KPI\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"_ChiSo_KPI\"}}, \"Property\": \"T\\u1ea7n su\\u1ea5t mua TB (\\u0110\\u01a1n/Kh\\u00e1ch)\"}, \"Name\": \"_ChiSo_KPI.T\\u1ea7n su\\u1ea5t mua TB (\\u0110\\u01a1n/Kh\\u00e1ch)\"}]}}}"
-        },
-        {
-          "x": 20,
-          "y": 230,
-          "z": 5,
-          "width": 600,
-          "height": 460,
-          "config": "{\"name\": \"Bar_OrdersByRegion\", \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Dim_Geography.region_name\"}], \"Y\": [{\"queryRef\": \"_ChiSo_KPI.T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"Dim_Geography\", \"Entity\": \"Dim_Geography\", \"Type\": 0}, {\"Name\": \"_ChiSo_KPI\", \"Entity\": \"_ChiSo_KPI\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"Dim_Geography\"}}, \"Property\": \"region_name\"}, \"Name\": \"Dim_Geography.region_name\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"_ChiSo_KPI\"}}, \"Property\": \"T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}, \"Name\": \"_ChiSo_KPI.T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}]}}}"
-        },
-        {
-          "x": 640,
-          "y": 230,
-          "z": 6,
-          "width": 620,
-          "height": 460,
-          "config": "{\"name\": \"Donut_CustomerSegments\", \"singleVisual\": {\"visualType\": \"donutChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Fact_Customer_Orders.customer_segment\"}], \"Y\": [{\"queryRef\": \"_ChiSo_KPI.T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"Fact_Customer_Orders\", \"Entity\": \"Fact_Customer_Orders\", \"Type\": 0}, {\"Name\": \"_ChiSo_KPI\", \"Entity\": \"_ChiSo_KPI\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"Fact_Customer_Orders\"}}, \"Property\": \"customer_segment\"}, \"Name\": \"Fact_Customer_Orders.customer_segment\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"_ChiSo_KPI\"}}, \"Property\": \"T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}, \"Name\": \"_ChiSo_KPI.T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}]}}}"
-        }
-      ]
+      "visualContainers": []
     },
     {
-      "name": "Section_GeographicDeepDive",
-      "displayName": "02. Phân Tích Địa Lý & Vận Tải",
+      "name": "ReportSection2",
+      "displayName": "02. Địa Lý & Vận Tải",
       "filters": "[]",
       "ordinal": 1,
       "width": 1280,
       "height": 720,
-      "visualContainers": [
-        {
-          "x": 20,
-          "y": 15,
-          "z": 0,
-          "width": 1240,
-          "height": 60,
-          "config": "{\"name\": \"HeaderGeo\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"\\u0110\\u1ecaA B\\u00c0N \\u0110\\u1ea6U T\\u00c0U: NGUY\\u00caN L\\u00dd PARETO 80/20 & M\\u1eacT \\u0110\\u1ed8 GIAO V\\u1eacN\", \"textStyle\": {\"fontFamily\": \"Segoe UI Semibold\", \"fontSize\": \"18pt\", \"color\": \"#0f172a\"}}]}]}}]}}}"
-        },
-        {
-          "x": 20,
-          "y": 90,
-          "z": 1,
-          "width": 600,
-          "height": 600,
-          "config": "{\"name\": \"Bar_TopStates\", \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Dim_Geography.customer_state\"}], \"Y\": [{\"queryRef\": \"_ChiSo_KPI.T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"Dim_Geography\", \"Entity\": \"Dim_Geography\", \"Type\": 0}, {\"Name\": \"_ChiSo_KPI\", \"Entity\": \"_ChiSo_KPI\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"Dim_Geography\"}}, \"Property\": \"customer_state\"}, \"Name\": \"Dim_Geography.customer_state\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"_ChiSo_KPI\"}}, \"Property\": \"T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}, \"Name\": \"_ChiSo_KPI.T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}]}}}"
-        },
-        {
-          "x": 640,
-          "y": 90,
-          "z": 2,
-          "width": 620,
-          "height": 600,
-          "config": "{\"name\": \"Bar_TopCities\", \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Dim_Geography.customer_city\"}], \"Y\": [{\"queryRef\": \"_ChiSo_KPI.T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"Dim_Geography\", \"Entity\": \"Dim_Geography\", \"Type\": 0}, {\"Name\": \"_ChiSo_KPI\", \"Entity\": \"_ChiSo_KPI\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"Dim_Geography\"}}, \"Property\": \"customer_city\"}, \"Name\": \"Dim_Geography.customer_city\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"_ChiSo_KPI\"}}, \"Property\": \"T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}, \"Name\": \"_ChiSo_KPI.T\\u1ed5ng \\u0111\\u01a1n h\\u00e0ng\"}]}}}"
-        }
-      ]
+      "visualContainers": []
     },
     {
-      "name": "Section_CustomerLoyalty",
-      "displayName": "03. Khách Hàng VIP & Thân Thiết",
+      "name": "ReportSection3",
+      "displayName": "03. Khách Hàng VIP",
       "filters": "[]",
       "ordinal": 2,
       "width": 1280,
       "height": 720,
-      "visualContainers": [
-        {
-          "x": 20,
-          "y": 15,
-          "z": 0,
-          "width": 1240,
-          "height": 60,
-          "config": "{\"name\": \"HeaderVIP\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"DANH S\\u00c1CH KH\\u00c1CH H\\u00c0NG TH\\u00c2N THI\\u1ebeT & SI\\u00caU TRUNG TH\\u00c0NH (VIP >= 5 \\u0110\\u01a0N)\", \"textStyle\": {\"fontFamily\": \"Segoe UI Semibold\", \"fontSize\": \"18pt\", \"color\": \"#0f172a\"}}]}]}}]}}}"
-        },
-        {
-          "x": 20,
-          "y": 90,
-          "z": 1,
-          "width": 1240,
-          "height": 600,
-          "config": "{\"name\": \"Table_VIPCustomers\", \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"Dim_Customers.customer_unique_id\"}, {\"queryRef\": \"Dim_Customers.order_count\"}, {\"queryRef\": \"Dim_Customers.customer_segment\"}, {\"queryRef\": \"Dim_Customers.customer_city\"}, {\"queryRef\": \"Dim_Customers.customer_state\"}, {\"queryRef\": \"Dim_Customers.region_name\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"Dim_Customers\", \"Entity\": \"Dim_Customers\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"Dim_Customers\"}}, \"Property\": \"customer_unique_id\"}, \"Name\": \"Dim_Customers.customer_unique_id\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"Dim_Customers\"}}, \"Property\": \"order_count\"}, \"Name\": \"Dim_Customers.order_count\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"Dim_Customers\"}}, \"Property\": \"customer_segment\"}, \"Name\": \"Dim_Customers.customer_segment\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"Dim_Customers\"}}, \"Property\": \"customer_city\"}, \"Name\": \"Dim_Customers.customer_city\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"Dim_Customers\"}}, \"Property\": \"customer_state\"}, \"Name\": \"Dim_Customers.customer_state\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"Dim_Customers\"}}, \"Property\": \"region_name\"}, \"Name\": \"Dim_Customers.region_name\"}]}}}"
-        }
-      ]
+      "visualContainers": []
     }
   ]
 }
