@@ -1,0 +1,686 @@
+{
+  "name": "ac2274c7-bb10-4317-a523-db2e3735bfd7",
+  "compatibilityLevel": 1550,
+  "createdTimestamp": "2026-10-16T15:44:48.756667+07:00",
+  "lastUpdate": "2026-10-16T15:44:55.133333+07:00",
+  "lastSchemaUpdate": "2026-10-16T15:44:48.756667+07:00",
+  "lastProcessed": "1699-12-31T07:00:00+07:00",
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "modifiedTime": "2026-10-16T08:44:48.976667",
+    "structureModifiedTime": "2026-10-16T08:52:58.68",
+    "tables": [
+      {
+        "name": "Dim_Geography",
+        "description": "Bảng chiều thông tin Địa lý khách hàng Olist Brazil",
+        "lineageTag": "c296d17d-8a5d-4f67-8bd7-4005bf47f4bd",
+        "modifiedTime": "2026-10-16T08:51:42.253333",
+        "structureModifiedTime": "2026-10-16T08:57:01.573333",
+        "columns": [
+          {
+            "name": "customer_zip_code_prefix",
+            "dataType": "string",
+            "isKey": true,
+            "isNullable": false,
+            "sourceColumn": "customer_zip_code_prefix",
+            "lineageTag": "32d37699-7d43-4840-b2ca-9d5bd25e273b",
+            "modifiedTime": "2026-10-16T08:51:42.253333",
+            "structureModifiedTime": "2026-10-16T08:51:42.253333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:08.283333",
+              "refreshedTime": "2026-10-16T08:52:08.283333"
+            }
+          },
+          {
+            "name": "customer_city",
+            "dataType": "string",
+            "sourceColumn": "customer_city",
+            "lineageTag": "18fd1fd3-4891-42d0-99c0-d9de796fc0f2",
+            "modifiedTime": "2026-10-16T08:51:42.253333",
+            "structureModifiedTime": "2026-10-16T08:51:42.253333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:08.27",
+              "refreshedTime": "2026-10-16T08:52:08.27"
+            }
+          },
+          {
+            "name": "customer_state",
+            "dataType": "string",
+            "sourceColumn": "customer_state",
+            "lineageTag": "406e370a-bdae-4025-9783-d5ec535d7084",
+            "modifiedTime": "2026-10-16T08:51:42.253333",
+            "structureModifiedTime": "2026-10-16T08:51:42.253333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:08.266667",
+              "refreshedTime": "2026-10-16T08:52:08.266667"
+            }
+          },
+          {
+            "name": "state_name",
+            "dataType": "string",
+            "sourceColumn": "state_name",
+            "lineageTag": "190c2cf5-daf4-4927-9616-c4e31dfe5376",
+            "modifiedTime": "2026-10-16T08:51:42.253333",
+            "structureModifiedTime": "2026-10-16T08:51:42.253333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:08.266667",
+              "refreshedTime": "2026-10-16T08:52:08.266667"
+            }
+          },
+          {
+            "name": "region_code",
+            "dataType": "string",
+            "sourceColumn": "region_code",
+            "lineageTag": "d743717f-e9f0-4d4e-ba40-28de6abda6ba",
+            "modifiedTime": "2026-10-16T08:51:42.253333",
+            "structureModifiedTime": "2026-10-16T08:51:42.253333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:08.263333",
+              "refreshedTime": "2026-10-16T08:52:08.263333"
+            }
+          },
+          {
+            "name": "region_name",
+            "dataType": "string",
+            "sourceColumn": "region_name",
+            "lineageTag": "505df8ee-03e2-412f-b039-550183128560",
+            "modifiedTime": "2026-10-16T08:51:42.253333",
+            "structureModifiedTime": "2026-10-16T08:51:42.253333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:08.266667",
+              "refreshedTime": "2026-10-16T08:52:08.266667"
+            }
+          },
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isNullable": false,
+            "modifiedTime": "2026-10-16T08:51:42.253333",
+            "structureModifiedTime": "2026-10-16T08:51:42.253333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:08.263333",
+              "refreshedTime": "2026-10-16T08:52:08.263333"
+            }
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Dim_Geography",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2026-10-16T08:52:07.99",
+            "refreshedTime": "2026-10-16T08:52:07.99",
+            "source": {
+              "type": "m",
+              "expression": "let Source = Csv.Document(File.Contents(\"D:\\\\Olist Customers\\\\data\\\\processed\\\\dim_geography.csv\"),[Delimiter=\",\", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]), #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]) in #\"Promoted Headers\""
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Phân Cấp Địa Lý",
+            "description": "Phân cấp địa lý từ Vùng miền -> Bang -> Thành phố",
+            "lineageTag": "a1ac905f-ceab-4b5c-9cde-24525be081a7",
+            "modifiedTime": "2026-10-16T08:57:01.573333",
+            "structureModifiedTime": "2026-10-16T08:57:01.573333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "levels": [
+              {
+                "name": "Vùng Miền",
+                "ordinal": 0,
+                "column": "region_name",
+                "lineageTag": "4fff7d96-38e1-4e42-882d-2a2aa4b578ec",
+                "modifiedTime": "2026-10-16T08:57:01.573333"
+              },
+              {
+                "name": "Bang",
+                "ordinal": 1,
+                "column": "state_name",
+                "lineageTag": "a74f7079-21b4-47ae-a1ec-3f8f8492fabe",
+                "modifiedTime": "2026-10-16T08:57:01.573333"
+              },
+              {
+                "name": "Thành Phố",
+                "ordinal": 2,
+                "column": "customer_city",
+                "lineageTag": "8bb44090-b187-4539-a47e-fcd6e367ceb0",
+                "modifiedTime": "2026-10-16T08:57:01.573333"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dim_Customers",
+        "description": "Bảng chiều thông tin Khách hàng định danh duy nhất (Unique Customers)",
+        "lineageTag": "14762f0d-aeac-45c9-b6ac-8eb65b12e5d3",
+        "modifiedTime": "2026-10-16T08:51:55.446667",
+        "structureModifiedTime": "2026-10-16T08:51:55.446667",
+        "columns": [
+          {
+            "name": "customer_unique_id",
+            "dataType": "string",
+            "isKey": true,
+            "isNullable": false,
+            "sourceColumn": "customer_unique_id",
+            "lineageTag": "f95040d7-3bad-4f66-87e5-c0c7df505e63",
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:16.716667",
+              "refreshedTime": "2026-10-16T08:52:16.716667"
+            }
+          },
+          {
+            "name": "order_count",
+            "dataType": "int64",
+            "isNullable": false,
+            "sourceColumn": "order_count",
+            "lineageTag": "9f4d2b23-01ec-4a3a-93d4-f9c9f05ec675",
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:16.543333",
+              "refreshedTime": "2026-10-16T08:52:16.543333"
+            }
+          },
+          {
+            "name": "customer_segment",
+            "dataType": "string",
+            "sourceColumn": "customer_segment",
+            "lineageTag": "38309352-039f-467b-a7a3-3b0ee3e89b86",
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:16.543333",
+              "refreshedTime": "2026-10-16T08:52:16.543333"
+            }
+          },
+          {
+            "name": "customer_state",
+            "dataType": "string",
+            "sourceColumn": "customer_state",
+            "lineageTag": "d41992d4-9eba-415e-acd4-89c78cc6bec4",
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:16.543333",
+              "refreshedTime": "2026-10-16T08:52:16.543333"
+            }
+          },
+          {
+            "name": "customer_city",
+            "dataType": "string",
+            "sourceColumn": "customer_city",
+            "lineageTag": "34b6100e-762d-4d83-89a0-5b0680101923",
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:16.546667",
+              "refreshedTime": "2026-10-16T08:52:16.546667"
+            }
+          },
+          {
+            "name": "region_name",
+            "dataType": "string",
+            "sourceColumn": "region_name",
+            "lineageTag": "dd5810c9-99b3-4ae0-913e-cbbfa6dd27b8",
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:16.543333",
+              "refreshedTime": "2026-10-16T08:52:16.543333"
+            }
+          },
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isNullable": false,
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:16.543333",
+              "refreshedTime": "2026-10-16T08:52:16.543333"
+            }
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Dim_Customers",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2026-10-16T08:52:16.526667",
+            "refreshedTime": "2026-10-16T08:52:16.526667",
+            "source": {
+              "type": "m",
+              "expression": "let Source = Csv.Document(File.Contents(\"D:\\\\Olist Customers\\\\data\\\\processed\\\\dim_customers.csv\"),[Delimiter=\",\", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]), #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]), #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"order_count\", Int64.Type}}) in #\"Changed Type\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fact_Customer_Orders",
+        "description": "Bảng sự kiện giao dịch đơn hàng khách hàng Olist (Fact Table)",
+        "lineageTag": "0881b770-b547-4b27-87c4-b6354b7a3a62",
+        "modifiedTime": "2026-10-16T08:51:55.446667",
+        "structureModifiedTime": "2026-10-16T08:51:55.446667",
+        "columns": [
+          {
+            "name": "customer_id",
+            "dataType": "string",
+            "isKey": true,
+            "isNullable": false,
+            "sourceColumn": "customer_id",
+            "lineageTag": "07417b3d-c4d6-46a6-8004-aa850d57ade2",
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:21.576667",
+              "refreshedTime": "2026-10-16T08:52:21.576667"
+            }
+          },
+          {
+            "name": "customer_unique_id",
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "customer_unique_id",
+            "lineageTag": "780916b0-6147-4104-86fa-50b0c44fa9af",
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:21.563333",
+              "refreshedTime": "2026-10-16T08:52:21.563333"
+            }
+          },
+          {
+            "name": "customer_zip_code_prefix",
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "customer_zip_code_prefix",
+            "lineageTag": "23868fbd-7ca1-4c8f-9256-b3c3937049d3",
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:21.296667",
+              "refreshedTime": "2026-10-16T08:52:21.296667"
+            }
+          },
+          {
+            "name": "customer_city",
+            "dataType": "string",
+            "sourceColumn": "customer_city",
+            "lineageTag": "4a8b994a-76ce-4b21-8f75-e116a5e204a3",
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:21.286667",
+              "refreshedTime": "2026-10-16T08:52:21.286667"
+            }
+          },
+          {
+            "name": "customer_state",
+            "dataType": "string",
+            "sourceColumn": "customer_state",
+            "lineageTag": "38cd0b26-838a-465c-882d-088cad6b07e8",
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:21.276667",
+              "refreshedTime": "2026-10-16T08:52:21.276667"
+            }
+          },
+          {
+            "name": "region_name",
+            "dataType": "string",
+            "sourceColumn": "region_name",
+            "lineageTag": "58c346b7-c128-4db2-918d-66852f6d2851",
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:21.276667",
+              "refreshedTime": "2026-10-16T08:52:21.276667"
+            }
+          },
+          {
+            "name": "order_count",
+            "dataType": "int64",
+            "isNullable": false,
+            "sourceColumn": "order_count",
+            "lineageTag": "9476bbb5-d47d-4091-95d5-addb87728a2c",
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:21.276667",
+              "refreshedTime": "2026-10-16T08:52:21.276667"
+            }
+          },
+          {
+            "name": "customer_segment",
+            "dataType": "string",
+            "sourceColumn": "customer_segment",
+            "lineageTag": "2f79a194-e1fb-49a8-97b4-0ea10bafbf09",
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:21.276667",
+              "refreshedTime": "2026-10-16T08:52:21.276667"
+            }
+          },
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isNullable": false,
+            "modifiedTime": "2026-10-16T08:51:55.446667",
+            "structureModifiedTime": "2026-10-16T08:51:55.446667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:52:21.276667",
+              "refreshedTime": "2026-10-16T08:52:21.276667"
+            }
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Fact_Customer_Orders",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2026-10-16T08:52:21.276667",
+            "refreshedTime": "2026-10-16T08:52:21.276667",
+            "source": {
+              "type": "m",
+              "expression": "let Source = Csv.Document(File.Contents(\"D:\\\\Olist Customers\\\\data\\\\processed\\\\fact_customer_orders.csv\"),[Delimiter=\",\", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]), #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]), #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"order_count\", Int64.Type}}) in #\"Changed Type\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "_ChiSo_KPI",
+        "description": "Bảng chứa các thước đo chỉ số KPI phân tích Olist",
+        "lineageTag": "f6bad6a3-ac1e-42e2-af88-71f565c099b3",
+        "modifiedTime": "2026-10-16T08:52:58.68",
+        "structureModifiedTime": "2026-10-16T08:55:27.136667",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2026-10-16T08:52:58.68",
+            "structureModifiedTime": "2026-10-16T08:52:58.68",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:53:03.553333",
+              "refreshedTime": "2026-10-16T08:53:03.553333"
+            }
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "KhoiTao",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "[KhoiTao]",
+            "modifiedTime": "2026-10-16T08:57:11.333333",
+            "structureModifiedTime": "2026-10-16T08:52:59.06",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-16T08:53:03.556667",
+              "refreshedTime": "2026-10-16T08:53:03.556667"
+            }
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_ChiSo_KPI",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2026-10-16T08:53:03.553333",
+            "refreshedTime": "2026-10-16T08:53:03.553333",
+            "source": {
+              "type": "calculated",
+              "expression": "ROW(\"KhoiTao\", 1)"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Tổng đơn hàng",
+            "description": "Tổng số lượng giao dịch đơn hàng phát sinh trên sàn Olist",
+            "expression": "COUNTROWS(Fact_Customer_Orders)",
+            "formatString": "#,##0",
+            "displayFolder": "01. Quy Mô & Sản Lượng",
+            "lineageTag": "cf5481c3-ae1a-4034-b72d-750beeacf3ec",
+            "dataType": "int64",
+            "modifiedTime": "2026-10-16T08:55:27.153333",
+            "structureModifiedTime": "2026-10-16T08:55:27.136667"
+          },
+          {
+            "name": "Tổng khách hàng Unique",
+            "description": "Tổng số lượng khách hàng định danh duy nhất (Unique Human Customers)",
+            "expression": "DISTINCTCOUNT(Dim_Customers[customer_unique_id])",
+            "formatString": "#,##0",
+            "displayFolder": "01. Quy Mô & Sản Lượng",
+            "lineageTag": "d696a841-e16c-421c-9934-fa9280458340",
+            "dataType": "int64",
+            "modifiedTime": "2026-10-16T08:55:27.153333",
+            "structureModifiedTime": "2026-10-16T08:55:27.136667"
+          },
+          {
+            "name": "Tần suất mua TB (Đơn/Khách)",
+            "description": "Tần suất đặt hàng trung bình trên mỗi khách hàng (Đơn/Khách)",
+            "expression": "DIVIDE([Tổng đơn hàng], [Tổng khách hàng Unique], 0)",
+            "formatString": "0.000",
+            "displayFolder": "01. Quy Mô & Sản Lượng",
+            "lineageTag": "03d47d7e-d7c2-40ba-bbe0-c7f4bf09165f",
+            "dataType": "double",
+            "modifiedTime": "2026-10-16T08:55:27.153333",
+            "structureModifiedTime": "2026-10-16T08:55:27.136667"
+          },
+          {
+            "name": "Khách hàng mua 1 lần",
+            "description": "Số lượng khách hàng chỉ mua duy nhất 1 lần rồi rời bỏ",
+            "expression": "CALCULATE(DISTINCTCOUNT(Fact_Customer_Orders[customer_unique_id]), Dim_Customers[order_count] = 1)",
+            "formatString": "#,##0",
+            "displayFolder": "02. Giữ Chân & Khách Hàng Thân Thiết",
+            "lineageTag": "1f623061-0711-49e8-931f-e8f7db31360b",
+            "dataType": "int64",
+            "modifiedTime": "2026-10-16T08:55:27.153333",
+            "structureModifiedTime": "2026-10-16T08:55:27.136667"
+          },
+          {
+            "name": "Khách hàng quay lại (>=2 đơn)",
+            "description": "Số lượng khách hàng đã mua từ 2 đơn hàng trở lên",
+            "expression": "CALCULATE(DISTINCTCOUNT(Fact_Customer_Orders[customer_unique_id]), Dim_Customers[order_count] > 1)",
+            "formatString": "#,##0",
+            "displayFolder": "02. Giữ Chân & Khách Hàng Thân Thiết",
+            "lineageTag": "7e795004-334b-44c3-a482-b201b0bc0545",
+            "dataType": "int64",
+            "modifiedTime": "2026-10-16T08:55:27.153333",
+            "structureModifiedTime": "2026-10-16T08:55:27.136667"
+          },
+          {
+            "name": "Tỷ lệ mua lại (%)",
+            "description": "Tỷ lệ khách hàng mua lại trên tổng số khách hàng định danh (%)",
+            "expression": "DIVIDE([Khách hàng quay lại (>=2 đơn)], [Tổng khách hàng Unique], 0)",
+            "formatString": "0.00%",
+            "displayFolder": "02. Giữ Chân & Khách Hàng Thân Thiết",
+            "lineageTag": "febe5978-6af4-4147-8853-a52b5f415819",
+            "dataType": "double",
+            "modifiedTime": "2026-10-16T08:55:27.153333",
+            "structureModifiedTime": "2026-10-16T08:55:27.136667"
+          },
+          {
+            "name": "Khách hàng VIP (>=5 đơn)",
+            "description": "Số lượng khách hàng siêu trung thành có từ 5 đơn hàng trở lên",
+            "expression": "CALCULATE(DISTINCTCOUNT(Fact_Customer_Orders[customer_unique_id]), Dim_Customers[order_count] >= 5)",
+            "formatString": "#,##0",
+            "displayFolder": "02. Giữ Chân & Khách Hàng Thân Thiết",
+            "lineageTag": "790c9a00-0807-4400-a0cf-bfce3c518037",
+            "dataType": "int64",
+            "modifiedTime": "2026-10-16T08:55:27.153333",
+            "structureModifiedTime": "2026-10-16T08:55:27.136667"
+          },
+          {
+            "name": "Số đô thị có đơn hàng",
+            "description": "Tổng số thành phố/đô thị có khách hàng đặt hàng trên toàn quốc",
+            "expression": "DISTINCTCOUNT(Dim_Geography[customer_city])",
+            "formatString": "#,##0",
+            "displayFolder": "03. Phân Tích Địa Lý & Vùng Miền",
+            "lineageTag": "00af69f4-f282-41c8-ba0d-c5cd69c7aa91",
+            "dataType": "int64",
+            "modifiedTime": "2026-10-16T08:55:27.153333",
+            "structureModifiedTime": "2026-10-16T08:55:27.136667"
+          },
+          {
+            "name": "Số bang phủ sóng",
+            "description": "Tổng số bang của Brazil mà Olist đã tiếp cận khách hàng",
+            "expression": "DISTINCTCOUNT(Dim_Geography[customer_state])",
+            "formatString": "#,##0",
+            "displayFolder": "03. Phân Tích Địa Lý & Vùng Miền",
+            "lineageTag": "8bbc3840-ee4e-48eb-ab28-ae40882f08b2",
+            "dataType": "int64",
+            "modifiedTime": "2026-10-16T08:55:27.153333",
+            "structureModifiedTime": "2026-10-16T08:55:27.136667"
+          },
+          {
+            "name": "Đơn hàng Vùng Đông Nam",
+            "description": "Số đơn hàng phát sinh tại vùng kinh tế trọng điểm Đông Nam (Sudeste)",
+            "expression": "CALCULATE([Tổng đơn hàng], Dim_Geography[region_code] = \"Sudeste\")",
+            "formatString": "#,##0",
+            "displayFolder": "03. Phân Tích Địa Lý & Vùng Miền",
+            "lineageTag": "21ec2e52-ef12-44fc-a477-bf124df035ee",
+            "dataType": "int64",
+            "modifiedTime": "2026-10-16T08:55:27.153333",
+            "structureModifiedTime": "2026-10-16T08:55:27.136667"
+          },
+          {
+            "name": "% Tỷ trọng Đơn hàng Vùng",
+            "description": "Tỷ trọng đơn hàng theo vùng so với tổng số đơn được lọc",
+            "expression": "DIVIDE([Tổng đơn hàng], CALCULATE([Tổng đơn hàng], ALLSELECTED(Fact_Customer_Orders)), 0)",
+            "formatString": "0.00%",
+            "displayFolder": "03. Phân Tích Địa Lý & Vùng Miền",
+            "lineageTag": "ed2f60f5-d8a9-495e-8400-ec16a70c656b",
+            "dataType": "double",
+            "modifiedTime": "2026-10-16T08:55:27.153333",
+            "structureModifiedTime": "2026-10-16T08:55:27.136667"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "Rel_Customers_Orders",
+        "fromTable": "Fact_Customer_Orders",
+        "fromColumn": "customer_unique_id",
+        "toTable": "Dim_Customers",
+        "toColumn": "customer_unique_id",
+        "state": "ready",
+        "modifiedTime": "2026-10-16T08:56:08.533333",
+        "refreshedTime": "2026-10-16T08:56:08.533333"
+      },
+      {
+        "name": "Rel_Geography_Orders",
+        "fromTable": "Fact_Customer_Orders",
+        "fromColumn": "customer_zip_code_prefix",
+        "toTable": "Dim_Geography",
+        "toColumn": "customer_zip_code_prefix",
+        "state": "ready",
+        "modifiedTime": "2026-10-16T08:56:08.443333",
+        "refreshedTime": "2026-10-16T08:56:08.443333"
+      }
+    ],
+    "cultures": [
+      {
+        "name": "en-US",
+        "modifiedTime": "2026-10-16T08:44:48.976667",
+        "structureModifiedTime": "2026-10-16T08:44:48.976667",
+        "linguisticMetadata": {
+          "content": {
+            "Version": "1.0.0",
+            "Language": "en-US"
+          },
+          "contentType": "json",
+          "modifiedTime": "2026-10-16T08:44:48.976667"
+        }
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1",
+        "modifiedTime": "2026-10-16T08:44:48.976667"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"MCP-PBIModeling\"]",
+        "modifiedTime": "2026-10-16T08:51:42.253333"
+      }
+    ]
+  }
+}
