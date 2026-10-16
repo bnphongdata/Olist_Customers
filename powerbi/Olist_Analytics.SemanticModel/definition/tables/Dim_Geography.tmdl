@@ -1,0 +1,56 @@
+/// Bảng chiều thông tin Địa lý khách hàng Olist Brazil
+table Dim_Geography
+	lineageTag: c296d17d-8a5d-4f67-8bd7-4005bf47f4bd
+
+	column customer_zip_code_prefix
+		dataType: string
+		isKey
+		isNullable: false
+		lineageTag: 32d37699-7d43-4840-b2ca-9d5bd25e273b
+		sourceColumn: customer_zip_code_prefix
+
+	column customer_city
+		dataType: string
+		lineageTag: 18fd1fd3-4891-42d0-99c0-d9de796fc0f2
+		sourceColumn: customer_city
+
+	column customer_state
+		dataType: string
+		lineageTag: 406e370a-bdae-4025-9783-d5ec535d7084
+		sourceColumn: customer_state
+
+	column state_name
+		dataType: string
+		lineageTag: 190c2cf5-daf4-4927-9616-c4e31dfe5376
+		sourceColumn: state_name
+
+	column region_code
+		dataType: string
+		lineageTag: d743717f-e9f0-4d4e-ba40-28de6abda6ba
+		sourceColumn: region_code
+
+	column region_name
+		dataType: string
+		lineageTag: 505df8ee-03e2-412f-b039-550183128560
+		sourceColumn: region_name
+
+	/// Phân cấp địa lý từ Vùng miền -> Bang -> Thành phố
+	hierarchy 'Phân Cấp Địa Lý'
+		lineageTag: a1ac905f-ceab-4b5c-9cde-24525be081a7
+
+		level 'Vùng Miền'
+			lineageTag: 4fff7d96-38e1-4e42-882d-2a2aa4b578ec
+			column: region_name
+
+		level Bang
+			lineageTag: a74f7079-21b4-47ae-a1ec-3f8f8492fabe
+			column: state_name
+
+		level 'Thành Phố'
+			lineageTag: 8bb44090-b187-4539-a47e-fcd6e367ceb0
+			column: customer_city
+
+	partition Dim_Geography = m
+		mode: import
+		source = let Source = Csv.Document(File.Contents("D:\\Olist Customers\\data\\processed\\dim_geography.csv"),[Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]), #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]) in #"Promoted Headers"
+

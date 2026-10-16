@@ -1,0 +1,8 @@
+relationship Rel_Customers_Orders
+	fromColumn: Fact_Customer_Orders.customer_unique_id
+	toColumn: Dim_Customers.customer_unique_id
+
+relationship Rel_Geography_Orders
+	fromColumn: Fact_Customer_Orders.customer_zip_code_prefix
+	toColumn: Dim_Geography.customer_zip_code_prefix
+

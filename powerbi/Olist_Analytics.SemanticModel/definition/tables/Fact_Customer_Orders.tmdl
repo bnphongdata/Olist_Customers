@@ -1,0 +1,53 @@
+/// Bảng sự kiện giao dịch đơn hàng khách hàng Olist (Fact Table)
+table Fact_Customer_Orders
+	lineageTag: 0881b770-b547-4b27-87c4-b6354b7a3a62
+
+	column customer_id
+		dataType: string
+		isKey
+		isNullable: false
+		lineageTag: 07417b3d-c4d6-46a6-8004-aa850d57ade2
+		sourceColumn: customer_id
+
+	column customer_unique_id
+		dataType: string
+		isNullable: false
+		lineageTag: 780916b0-6147-4104-86fa-50b0c44fa9af
+		sourceColumn: customer_unique_id
+
+	column customer_zip_code_prefix
+		dataType: string
+		isNullable: false
+		lineageTag: 23868fbd-7ca1-4c8f-9256-b3c3937049d3
+		sourceColumn: customer_zip_code_prefix
+
+	column customer_city
+		dataType: string
+		lineageTag: 4a8b994a-76ce-4b21-8f75-e116a5e204a3
+		sourceColumn: customer_city
+
+	column customer_state
+		dataType: string
+		lineageTag: 38cd0b26-838a-465c-882d-088cad6b07e8
+		sourceColumn: customer_state
+
+	column region_name
+		dataType: string
+		lineageTag: 58c346b7-c128-4db2-918d-66852f6d2851
+		sourceColumn: region_name
+
+	column order_count
+		dataType: int64
+		isNullable: false
+		lineageTag: 9476bbb5-d47d-4091-95d5-addb87728a2c
+		sourceColumn: order_count
+
+	column customer_segment
+		dataType: string
+		lineageTag: 2f79a194-e1fb-49a8-97b4-0ea10bafbf09
+		sourceColumn: customer_segment
+
+	partition Fact_Customer_Orders = m
+		mode: import
+		source = let Source = Csv.Document(File.Contents("D:\\Olist Customers\\data\\processed\\fact_customer_orders.csv"),[Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]), #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]), #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"order_count", Int64.Type}}) in #"Changed Type"
+

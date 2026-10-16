@@ -1,0 +1,41 @@
+/// Bảng chiều thông tin Khách hàng định danh duy nhất (Unique Customers)
+table Dim_Customers
+	lineageTag: 14762f0d-aeac-45c9-b6ac-8eb65b12e5d3
+
+	column customer_unique_id
+		dataType: string
+		isKey
+		isNullable: false
+		lineageTag: f95040d7-3bad-4f66-87e5-c0c7df505e63
+		sourceColumn: customer_unique_id
+
+	column order_count
+		dataType: int64
+		isNullable: false
+		lineageTag: 9f4d2b23-01ec-4a3a-93d4-f9c9f05ec675
+		sourceColumn: order_count
+
+	column customer_segment
+		dataType: string
+		lineageTag: 38309352-039f-467b-a7a3-3b0ee3e89b86
+		sourceColumn: customer_segment
+
+	column customer_state
+		dataType: string
+		lineageTag: d41992d4-9eba-415e-acd4-89c78cc6bec4
+		sourceColumn: customer_state
+
+	column customer_city
+		dataType: string
+		lineageTag: 34b6100e-762d-4d83-89a0-5b0680101923
+		sourceColumn: customer_city
+
+	column region_name
+		dataType: string
+		lineageTag: dd5810c9-99b3-4ae0-913e-cbbfa6dd27b8
+		sourceColumn: region_name
+
+	partition Dim_Customers = m
+		mode: import
+		source = let Source = Csv.Document(File.Contents("D:\\Olist Customers\\data\\processed\\dim_customers.csv"),[Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]), #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]), #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"order_count", Int64.Type}}) in #"Changed Type"
+

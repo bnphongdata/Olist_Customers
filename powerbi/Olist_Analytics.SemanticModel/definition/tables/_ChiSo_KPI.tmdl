@@ -1,0 +1,79 @@
+/// Bảng chứa các thước đo chỉ số KPI phân tích Olist
+table _ChiSo_KPI
+	lineageTag: f6bad6a3-ac1e-42e2-af88-71f565c099b3
+
+	/// Tổng số lượng giao dịch đơn hàng phát sinh trên sàn Olist
+	measure 'Tổng đơn hàng' = COUNTROWS(Fact_Customer_Orders)
+		formatString: #,##0
+		displayFolder: 01. Quy Mô & Sản Lượng
+		lineageTag: cf5481c3-ae1a-4034-b72d-750beeacf3ec
+
+	/// Tổng số lượng khách hàng định danh duy nhất (Unique Human Customers)
+	measure 'Tổng khách hàng Unique' = DISTINCTCOUNT(Dim_Customers[customer_unique_id])
+		formatString: #,##0
+		displayFolder: 01. Quy Mô & Sản Lượng
+		lineageTag: d696a841-e16c-421c-9934-fa9280458340
+
+	/// Tần suất đặt hàng trung bình trên mỗi khách hàng (Đơn/Khách)
+	measure 'Tần suất mua TB (Đơn/Khách)' = DIVIDE([Tổng đơn hàng], [Tổng khách hàng Unique], 0)
+		formatString: 0.000
+		displayFolder: 01. Quy Mô & Sản Lượng
+		lineageTag: 03d47d7e-d7c2-40ba-bbe0-c7f4bf09165f
+
+	/// Số lượng khách hàng chỉ mua duy nhất 1 lần rồi rời bỏ
+	measure 'Khách hàng mua 1 lần' = CALCULATE(DISTINCTCOUNT(Fact_Customer_Orders[customer_unique_id]), Dim_Customers[order_count] = 1)
+		formatString: #,##0
+		displayFolder: 02. Giữ Chân & Khách Hàng Thân Thiết
+		lineageTag: 1f623061-0711-49e8-931f-e8f7db31360b
+
+	/// Số lượng khách hàng đã mua từ 2 đơn hàng trở lên
+	measure 'Khách hàng quay lại (>=2 đơn)' = CALCULATE(DISTINCTCOUNT(Fact_Customer_Orders[customer_unique_id]), Dim_Customers[order_count] > 1)
+		formatString: #,##0
+		displayFolder: 02. Giữ Chân & Khách Hàng Thân Thiết
+		lineageTag: 7e795004-334b-44c3-a482-b201b0bc0545
+
+	/// Tỷ lệ khách hàng mua lại trên tổng số khách hàng định danh (%)
+	measure 'Tỷ lệ mua lại (%)' = DIVIDE([Khách hàng quay lại (>=2 đơn)], [Tổng khách hàng Unique], 0)
+		formatString: 0.00%
+		displayFolder: 02. Giữ Chân & Khách Hàng Thân Thiết
+		lineageTag: febe5978-6af4-4147-8853-a52b5f415819
+
+	/// Số lượng khách hàng siêu trung thành có từ 5 đơn hàng trở lên
+	measure 'Khách hàng VIP (>=5 đơn)' = CALCULATE(DISTINCTCOUNT(Fact_Customer_Orders[customer_unique_id]), Dim_Customers[order_count] >= 5)
+		formatString: #,##0
+		displayFolder: 02. Giữ Chân & Khách Hàng Thân Thiết
+		lineageTag: 790c9a00-0807-4400-a0cf-bfce3c518037
+
+	/// Tổng số thành phố/đô thị có khách hàng đặt hàng trên toàn quốc
+	measure 'Số đô thị có đơn hàng' = DISTINCTCOUNT(Dim_Geography[customer_city])
+		formatString: #,##0
+		displayFolder: 03. Phân Tích Địa Lý & Vùng Miền
+		lineageTag: 00af69f4-f282-41c8-ba0d-c5cd69c7aa91
+
+	/// Tổng số bang của Brazil mà Olist đã tiếp cận khách hàng
+	measure 'Số bang phủ sóng' = DISTINCTCOUNT(Dim_Geography[customer_state])
+		formatString: #,##0
+		displayFolder: 03. Phân Tích Địa Lý & Vùng Miền
+		lineageTag: 8bbc3840-ee4e-48eb-ab28-ae40882f08b2
+
+	/// Số đơn hàng phát sinh tại vùng kinh tế trọng điểm Đông Nam (Sudeste)
+	measure 'Đơn hàng Vùng Đông Nam' = CALCULATE([Tổng đơn hàng], Dim_Geography[region_code] = "Sudeste")
+		formatString: #,##0
+		displayFolder: 03. Phân Tích Địa Lý & Vùng Miền
+		lineageTag: 21ec2e52-ef12-44fc-a477-bf124df035ee
+
+	/// Tỷ trọng đơn hàng theo vùng so với tổng số đơn được lọc
+	measure '% Tỷ trọng Đơn hàng Vùng' = DIVIDE([Tổng đơn hàng], CALCULATE([Tổng đơn hàng], ALLSELECTED(Fact_Customer_Orders)), 0)
+		formatString: 0.00%
+		displayFolder: 03. Phân Tích Địa Lý & Vùng Miền
+		lineageTag: ed2f60f5-d8a9-495e-8400-ec16a70c656b
+
+	column KhoiTao
+		isHidden
+		isNameInferred
+		sourceColumn: [KhoiTao]
+
+	partition _ChiSo_KPI = calculated
+		mode: import
+		source = ROW("KhoiTao", 1)
+
